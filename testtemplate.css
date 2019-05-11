@@ -1,0 +1,47 @@
+.pBack{
+    background-image: url("./img_resources/snowy_campus_1.jpg");
+    
+    /*filtering - for some reason blurs the form and not the BG image, will work on later
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    */
+
+    /*position/scale*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mForm{
+    /*positioning*/
+    position: absolute; 
+    top: 40%;
+    left: 50%;
+    /*size*/
+    width: 40em;
+    height: 50em;
+    /*positioning realtive to size*/
+    margin-top: -25em;     /*keep this half of height*/
+    margin-left: -20em;    /*keep this half of width*/
+
+    /*aestheticc*/
+    border: 10px groove goldenrod;
+    box-shadow: .25cm .25cm .13cm black;
+    background: white;
+
+
+}
+
+.formContent{
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    
+}
+
+
+.formContent{
+    text-align: center;
+    padding: 5px;
+    margin: auto;
+    
+}

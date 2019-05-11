@@ -1,0 +1,193 @@
+*{
+    font-family: Verdana;
+}
+:root{
+    font-size: 15px;
+}
+
+html{
+    min-width: 70rem;
+}
+
+body{
+    min-width: 70rem;
+    margin: 0;
+    padding: 0;
+}
+/*************************************/
+.pHeader{
+    margin: 0;
+    min-width: 70rem;
+    background-color: maroon;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 6rem;
+    width: 100vw;
+    z-index: 100;
+
+    box-shadow: 0 .2em .4em;
+    
+}
+
+.headerContent{
+    float: left;
+    text-align: center;
+}
+
+#logoFrame{
+    width: 6rem;
+    height: 6rem;
+    background-color: white;
+    content: url("./img_resources/AI_Logo.png");
+    -moz-box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,.7);
+    -webkit-box-shadow:inset 0px 0px 1px 1px rgba(0,0,0,.7);
+    box-shadow: inset 0px 0px 1px 1px rgba(0,0,0,.7);
+}
+#opDrawer{
+    position: relative;
+    float: left;
+    height: 6rem;
+    width: 8rem;
+
+    font-size: 2em;
+    color:white;
+    text-align: center;
+    vertical-align: middle;
+    line-height:6rem;
+    background-color:darkgoldenrod;
+
+    -moz-box-shadow: inset 5px 0px 10px 1px rgba(0,0,0,.7);
+    -webkit-box-shadow:inset 5px 0px 10px 1px rgba(0,0,0,.7);
+    box-shadow: inset 5px 0px 10px 1px rgba(0,0,0,.7);
+    
+}
+#opDrawer:hover{
+    background-color: goldenrod;
+}
+
+#headerText{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/*****************************************************************/
+.pBack{
+    background-image: url("./img_resources/snowy_campus_1.jpg");
+    
+    /*filtering - for some reason blurs the form and not the BG image, will work on later    */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+
+
+    z-index: -1;
+
+    /*position/scale*/
+    background-repeat: no-repeat;
+    background-size: fill;
+    background-attachment: fixed;
+    
+    height: 100%;
+    width:100%;
+    position:fixed;
+}
+/****************************************************************************************/
+.chDrawer{
+    position: absolute;
+    min-height: 53rem;
+    height: calc(100vh - 6rem);
+    width: 0;
+    background-color: rgba(0,0,0, 0.30);
+    color: white;
+    padding-top: 2rem;
+    transition: .5s;
+    overflow-x: hidden;
+}
+
+.chDrawer a{
+    padding: 1rem 1rem 1rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.75rem;
+    color:white;
+    display: block;
+    transition: .3s;
+}
+
+.chDrawer a:hover{
+    color: wheat;
+}
+
+.chDrawer hr{
+    color: white;
+    size: .5rem;
+}
+
+.chDrawer .closebtn{
+    position: absolute;
+    top: 0;
+    right: 1em;
+    font-size: 2em;
+    margin-left: 1em;
+}
+
+
+
+/****************************************************************************************/
+.mForm{
+    z-index: 1;
+    /*positioning*/
+    position: relative;
+    /*top:6rem;*/
+    left: 50vw;
+    transform: translate(-50,-50);
+
+    width: 40rem;
+    height: calc(100vh - 6rem);
+    min-height: 55rem;
+
+    bottom:1px;
+
+    margin-left: -20rem; /*keep half of width*/
+
+
+    /*aestheticc*/
+    border-right: 10px groove goldenrod;
+    border-left: 10px groove goldenrod;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.30), 0 6px 20px 0 rgba(0,0,0, 0.30);
+    background: white;
+
+
+}
+
+
+.formContent{
+    text-align: center;
+    padding: 2em;
+    margin: auto;
+    font-size: 20pt;
+    
+}
+/*options for the test selection box, input box(s), test output box, and submit button respectively*/
+#input{
+    font-size: 1.5rem;
+}
+.inputs{
+    margin: 1em;
+    font-size: 1.5rem;
+}
+#output{
+    font-size: 1.5rem;
+}
+#bsubmit{
+    margin: 2em;
+    font-size: 1.5rem;    
+}
+
+/********************************************************************************************/
+
+footer{
+    position: relative;
+}
